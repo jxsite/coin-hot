@@ -25,6 +25,8 @@ nav a:hover{color:var(--accent)}
 .badge.score{color:#fff}
 .s90{background:var(--accent)}.s80{background:var(--accent2)}.s70{background:var(--blue)}.s60{background:var(--gray)}
 .badge.src{background:var(--reason);color:var(--muted);border:1px solid var(--line)}
+.copybtn{font-size:12px;padding:3px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer;font-family:inherit}
+.copybtn:hover{color:var(--accent);border-color:var(--accent)}
 .item h2{font-size:19px;margin:10px 0 8px;line-height:1.5}
 .item h2 a{color:var(--ink);text-decoration:none}
 .item h2 a:hover{color:var(--accent);text-decoration:underline}
@@ -77,4 +79,12 @@ td,th{border:1px solid var(--line);padding:6px 12px;text-align:left}
 <footer class="site"><div class="wrap">
 CoinHOT · 加密货币行业动态聚合 · 每日精选与加密日报<br/>内容由 AI 自动采集、评分与撰写摘要，每条均链接原文；仅供信息参考，不构成投资建议。<br/>
 <a href="/coin-hot/about.html">算法说明</a> · <a href="/coin-hot/contact.html">联系方式</a> · <a href="/coin-hot/feed.xml">RSS</a>
-</div></footer></body></html>
+</div></footer>
+<script>
+function copyTweet(btn){
+var t='【CoinHOT精选·AI评分'+btn.dataset.score+'】'+btn.dataset.title+' '+btn.dataset.url;
+function done(){var o=btn.textContent;btn.textContent='已复制 ✓';setTimeout(function(){btn.textContent=o;},1500);}
+function fallback(){var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done();}catch(e){}document.body.removeChild(ta);}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(fallback);}else{fallback();}
+}
+</script></body></html>
