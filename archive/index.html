@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>往期日报 — CoinHOT</title><meta name="description" content="CoinHOT 自动聚合全网加密领域资讯，AI 两轮评分精选，生成中文标题摘要，每天发布加密日报。覆盖市场行情、监管政策、项目进展、安全事件、机构动态，一站追踪今天有什么加密新闻。"/>
+<title data-zh="往期日报 — CoinHOT" data-en="Archive — CoinHOT">往期日报 — CoinHOT</title><meta name="description" content="CoinHOT 自动聚合全网加密领域资讯，AI 两轮评分精选，生成中文标题摘要，每天发布加密日报。覆盖市场行情、监管政策、项目进展、安全事件、机构动态，一站追踪今天有什么加密新闻。"/>
 <link rel="alternate" type="application/rss+xml" title="CoinHOT — 精选" href="/coin-hot/feed.xml"/>
 <style>*{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#faf9f6;--card:#ffffff;--ink:#1c1a17;--muted:#8a857c;--line:#e9e4d9;--accent:#e5484d;--accent2:#f76b15;--blue:#3e63dd;--gray:#8b8d98;--reason:#f4f1ea}
@@ -12,6 +12,10 @@ header.site{border-bottom:1px solid var(--line);padding:26px 0 18px;margin-botto
 .topbar{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .themebtn{font-size:13px;padding:5px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer;font-family:inherit;white-space:nowrap}
 .themebtn:hover{color:var(--accent);border-color:var(--accent)}
+.langbtn{font-size:13px;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer;font-family:inherit;white-space:nowrap;font-weight:700}
+.langbtn:hover{color:var(--accent);border-color:var(--accent)}
+html[data-lang="en"] .lang-zh{display:none}
+html[data-lang="zh"] .lang-en{display:none}
 .brand{font-size:30px;font-weight:800;letter-spacing:1px}
 .brand .hot{color:var(--accent)}
 .tagline{color:var(--muted);font-size:14px;margin-top:4px}
@@ -49,37 +53,43 @@ code{background:var(--reason);padding:1px 6px;border-radius:6px;font-size:13px}
 table{border-collapse:collapse;font-size:14px;margin:10px 0}
 .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
 td,th{border:1px solid var(--line);padding:6px 12px;text-align:left}
-</style><script>try{var m=localStorage.getItem('coinhot-theme')||'auto';var d=m==='dark'||(m==='auto'&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.setAttribute('data-theme',d?'dark':'light');}catch(e){}</script></head><body>
+</style><script>try{var m=localStorage.getItem('coinhot-theme')||'auto';var d=m==='dark'||(m==='auto'&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.setAttribute('data-theme',d?'dark':'light');var l=localStorage.getItem('coinhot-lang')||'zh';document.documentElement.setAttribute('data-lang',l==='en'?'en':'zh');}catch(e){}</script></head><body>
 <header class="site"><div class="wrap">
-<div class="topbar"><div class="brand">Coin<span class="hot">HOT</span></div><button id="themeBtn" class="themebtn" onclick="toggleTheme()" title="切换主题">🌓 自动</button></div>
+<div class="topbar"><div class="brand">Coin<span class="hot">HOT</span></div><div style="display:flex;gap:8px"><button id="langBtn" class="langbtn" onclick="toggleLang()" title="Switch to English">EN</button><button id="themeBtn" class="themebtn" onclick="toggleTheme()" title="切换主题">自动</button></div></div>
 <div class="tagline">加密货币行业动态聚合 · 每日精选与加密日报</div>
-<nav><a href="/coin-hot/">今日精选</a><a href="/coin-hot/archive/">往期日报</a><a href="/coin-hot/about.html">算法说明</a><a href="/coin-hot/contact.html">联系方式</a><a href="/coin-hot/feed.xml">RSS 订阅</a></nav>
+<nav><a href="/coin-hot/"><span class="lang-zh">今日精选</span><span class="lang-en">Today</span></a><a href="/coin-hot/archive/"><span class="lang-zh">往期日报</span><span class="lang-en">Archive</span></a><a href="/coin-hot/contact.html"><span class="lang-zh">联系方式</span><span class="lang-en">Contact</span></a><a href="/coin-hot/feed.xml">RSS</a></nav>
 </div></header>
-<div class="wrap"><div class="dayhead">往期日报</div><ul class="arch"><li><a href="/coin-hot/archive/2026-10-10.html">2026-10-10 加密日报</a> <span style="color:var(--muted);font-size:13px">· 星期六 · 29 条</span></li></ul></div>
+<div class="wrap"><div class="dayhead"><span class="lang-zh">往期日报</span><span class="lang-en">Archive</span></div><ul class="arch"><li><a href="/coin-hot/archive/2026-10-10.html"><span class="lang-zh">2026-10-10 加密日报</span><span class="lang-en">2026-10-10 Crypto Daily</span></a> <span style="color:var(--muted);font-size:13px">· <span class="lang-zh">星期六</span><span class="lang-en">Saturday</span> · <span class="lang-zh">29 条</span><span class="lang-en">29 items</span></span></li>
+</ul></div>
 <footer class="site"><div class="wrap">
 CoinHOT · 加密货币行业动态聚合 · 每日精选与加密日报<br/>内容由 AI 自动采集、评分与撰写摘要，每条均链接原文；仅供信息参考，不构成投资建议。<br/>
-<a href="/coin-hot/about.html">算法说明</a> · <a href="/coin-hot/contact.html">联系方式</a> · <a href="/coin-hot/feed.xml">RSS</a>
+<span class="lang-zh">内容由 AI 自动采集、评分与撰写摘要，每条均链接原文；仅供信息参考，不构成投资建议。</span><span class="lang-en">Content is auto-collected, scored and summarized by AI; each item links to the original. For information only, not investment advice.</span><br/>
+<a href="/coin-hot/contact.html"><span class="lang-zh">联系方式</span><span class="lang-en">Contact</span></a> · <a href="/coin-hot/feed.xml">RSS</a>
 </div></footer>
 <script>
 function copyTweet(btn){
-var t='【CoinHOT精选·AI评分'+btn.dataset.score+'】'+btn.dataset.title+' '+btn.dataset.url;
-function done(){var o=btn.textContent;btn.textContent='已复制 ✓';setTimeout(function(){btn.textContent=o;},1500);}
+var en=document.documentElement.getAttribute('data-lang')==='en';
+var title=en?(btn.dataset.titleEn||btn.dataset.titleZh):btn.dataset.titleZh;
+var t=(en?'[CoinHOT Featured | AI Score '+btn.dataset.score+'] ':'【CoinHOT精选·AI评分'+btn.dataset.score+'】')+title+' '+btn.dataset.url;
+var ok=en?'Copied ✓':'已复制 ✓';
+function done(){var o=btn.innerHTML;btn.textContent=ok;setTimeout(function(){btn.innerHTML=o;},1500);}
 function fallback(){var ta=document.createElement('textarea');ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done();}catch(e){}document.body.removeChild(ta);}
 if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(fallback);}else{fallback();}
 }
 </script><script>
 (function(){
-var key='coinhot-theme';
-function label(m){return m==='auto'?'\U0001F313 自动':(m==='dark'?'\U0001F319 深色':'\2600\FE0F 浅色');}
-function apply(m){
-var dark=m==='dark'||(m==='auto'&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
-document.documentElement.setAttribute('data-theme',dark?'dark':'light');
-var b=document.getElementById('themeBtn');
-if(b){b.textContent=label(m);b.title='点击切换主题（当前：'+(m==='auto'?'跟随系统':(m==='dark'?'深色模式':'浅色模式'))+'）';}
-}
-var cur='auto';try{cur=localStorage.getItem(key)||'auto';}catch(e){}
-apply(cur);
-if(window.matchMedia){try{window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){var m='auto';try{m=localStorage.getItem(key)||'auto';}catch(e){}if(m==='auto')apply('auto');});}catch(e){}}
-window.toggleTheme=function(){var m='auto';try{m=localStorage.getItem(key)||'auto';}catch(e){}m=m==='auto'?'light':(m==='light'?'dark':'auto');try{localStorage.setItem(key,m);}catch(e){}apply(m);};
+var tkey='coinhot-theme', lkey='coinhot-lang';
+function sysDark(){return window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;}
+function get(k,d){try{return localStorage.getItem(k)||d;}catch(e){return d;}}
+function set(k,v){try{localStorage.setItem(k,v);}catch(e){}}
+var theme=get(tkey,'auto'), lang=get(lkey,'zh'); if(lang!=='en')lang='zh';
+function themeLabel(){var L=lang==='en';if(theme==='auto')return L?'Auto':'自动';if(theme==='dark')return L?'Dark':'深色';return L?'Light':'浅色';}
+function themeTip(){var L=lang==='en';var cur=theme==='auto'?(L?'follow system':'跟随系统'):(theme==='dark'?(L?'dark':'深色'):(L?'light':'浅色'));return (L?'Switch theme (now: ':'切换主题（当前：')+cur+(L?')':'）');}
+function applyTheme(){var dark=theme==='dark'||(theme==='auto'&&sysDark());document.documentElement.setAttribute('data-theme',dark?'dark':'light');var b=document.getElementById('themeBtn');if(b){b.textContent=themeLabel();b.title=themeTip();}}
+function applyLang(){document.documentElement.setAttribute('data-lang',lang);var b=document.getElementById('langBtn');if(b){b.textContent=lang==='en'?'中文':'EN';b.title=lang==='en'?'切换为中文':'Switch to English';}var t=document.querySelector('title');if(t&&t.dataset){t.textContent=lang==='en'?(t.dataset.en||t.dataset.zh):t.dataset.zh;}applyTheme();}
+window.toggleTheme=function(){theme=theme==='auto'?'light':(theme==='light'?'dark':'auto');set(tkey,theme);applyTheme();};
+window.toggleLang=function(){lang=lang==='zh'?'en':'zh';set(lkey,lang);applyLang();};
+applyLang();
+if(window.matchMedia){try{window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',function(){if(get(tkey,'auto')==='auto')applyTheme();});}catch(e){}}
 })();
 </script></body></html>
