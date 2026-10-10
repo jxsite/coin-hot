@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>算法说明 — CoinHOT</title><meta name="description" content="CoinHOT 自动聚合全网加密领域资讯，AI 两轮评分精选，生成中文标题摘要，每天发布加密日报。覆盖市场行情、监管政策、项目进展、安全事件、机构动态，一站追踪今天有什么加密新闻。"/>
+<link rel="alternate" type="application/rss+xml" title="CoinHOT — 精选" href="/coin-hot/feed.xml"/>
+<style>*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#faf9f6;--card:#ffffff;--ink:#1c1a17;--muted:#8a857c;--line:#e9e4d9;--accent:#e5484d;--accent2:#f76b15;--blue:#3e63dd;--gray:#8b8d98;--reason:#f4f1ea}
+@media(prefers-color-scheme:dark){:root{--bg:#13191c;--card:#1b2327;--ink:#ece7dd;--muted:#9a938a;--line:#2c353a;--reason:#20282d}}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.7}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header.site{border-bottom:1px solid var(--line);padding:26px 0 18px;margin-bottom:8px}
+.brand{font-size:30px;font-weight:800;letter-spacing:1px}
+.brand .hot{color:var(--accent)}
+.tagline{color:var(--muted);font-size:14px;margin-top:4px}
+nav{margin-top:12px;font-size:14px}
+nav a{color:var(--muted);text-decoration:none;margin-right:18px}
+nav a:hover{color:var(--accent)}
+.dayhead{padding:22px 0 6px;font-size:22px;font-weight:700}
+.dayhead .n{color:var(--muted);font-weight:400;font-size:15px;margin-left:8px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:14px 0}
+.meta{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.meta .time{font-variant-numeric:tabular-nums;font-weight:600;color:var(--ink)}
+.badge{display:inline-block;font-size:12px;padding:2px 10px;border-radius:999px;font-weight:600}
+.badge.pick{background:#fff1f0;color:var(--accent);border:1px solid #f3c1c0}
+@media(prefers-color-scheme:dark){.badge.pick{background:#3a2320}}
+.badge.score{color:#fff}
+.s90{background:var(--accent)}.s80{background:var(--accent2)}.s70{background:var(--blue)}.s60{background:var(--gray)}
+.badge.src{background:var(--reason);color:var(--muted);border:1px solid var(--line)}
+.item h2{font-size:19px;margin:10px 0 8px;line-height:1.5}
+.item h2 a{color:var(--ink);text-decoration:none}
+.item h2 a:hover{color:var(--accent);text-decoration:underline}
+.summary{font-size:15px;color:var(--ink);opacity:.92}
+.reason{margin-top:10px;font-size:13.5px;background:var(--reason);border-radius:10px;padding:10px 14px;color:var(--muted)}
+.reason b{color:var(--accent);font-weight:600}
+.also{margin-top:8px;font-size:12.5px;color:var(--muted)}
+footer.site{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 40px;color:var(--muted);font-size:13px}
+footer.site a{color:var(--muted)}
+.arch li{list-style:none;padding:10px 0;border-bottom:1px solid var(--line)}
+.arch a{color:var(--ink);text-decoration:none;font-size:16px}
+.arch a:hover{color:var(--accent)}
+.about h2{margin:22px 0 10px;font-size:20px}
+.about p,.about li{font-size:15px;margin-bottom:10px}
+.about ol,.about ul{padding-left:22px}
+code{background:var(--reason);padding:1px 6px;border-radius:6px;font-size:13px}
+table{border-collapse:collapse;font-size:14px;margin:10px 0}
+td,th{border:1px solid var(--line);padding:6px 12px;text-align:left}
+</style></head><body>
+<header class="site"><div class="wrap">
+<div class="brand">Coin<span class="hot">HOT</span></div>
+<div class="tagline">加密货币行业动态聚合 · 每日精选与加密日报</div>
+<nav><a href="/coin-hot/">今日精选</a><a href="/coin-hot/archive/">往期日报</a><a href="/coin-hot/about.html">算法说明</a><a href="/coin-hot/feed.xml">RSS 订阅</a></nav>
+</div></header>
+<div class="wrap"><div class="about"><div class="dayhead">算法说明：CoinHOT 的 AI 新闻流水线</div>
+<p>CoinHOT 模仿 <b>aihot.news</b> 的产品形态（AI 聚合 → 两轮评分 → 中文摘要 → 每日日报），把它的行业从 AI 换成加密货币。整条流水线每天自动运行一次，流程如下：</p>
+<h2>1. 采集（多信源、分级）</h2>
+<p>从 8 家加密媒体的 RSS 抓取近 30 小时新闻，信源按权威度分三级：</p>
+<table><tr><th>分级</th><th>信源</th><th>入选门槛</th></tr>
+<tr><td>T1</td><td>CoinDesk、CoinTelegraph、The Block</td><td>平均分 ≥ 60</td></tr>
+<tr><td>T1_5</td><td>Decrypt</td><td>平均分 ≥ 65</td></tr>
+<tr><td>T2</td><td>CryptoSlate、BeInCrypto、Bitcoin.com News、U.Today</td><td>平均分 ≥ 76</td></tr></table>
+<p>抓取后按链接与标题去重，同一事件的多家报道只保留一条主记录，其余计为“独立报道家数”。</p>
+<h2>2. 预筛</h2>
+<p>只保留加密行业相关内容，剔除纯广告/赞助稿、行情标题党、无信息增量的价格预测文和站内日报合集。</p>
+<h2>3. AI 两轮评分（0–100）</h2>
+<p>每条候选独立打两次分，取平均，五个维度加权：</p>
+<ul><li><b>重要性/影响力 35%</b>：对市场、协议、监管格局的实际影响</li>
+<li><b>时效性 15%</b>：24 小时内的突发优先</li>
+<li><b>信息增量 20%</b>：独家数据与深度 vs 通稿复述</li>
+<li><b>信源权威 15%</b>：分级与是否一手</li>
+<li><b>读者价值 15%</b>：对持币/从业者的决策参考度</li></ul>
+<p>噪声压制：交易所活动通稿、价格预测、个案诈骗（无行业影响）一律压分。宁可少选，不让噪声进精选。</p>
+<h2>4. 写作与归组</h2>
+<p>入选条目生成中文标题、答案先行的摘要与一句话推荐理由；同一事件的多家报道归组为一条，按独立报道家数排序热度。</p>
+<h2>5. 发布</h2>
+<p>生成静态站（首页今日精选、按日归档、RSS feed.xml），推送到 GitHub Pages。页面只读已生成的结果，不实时调模型。</p>
+<p style="color:var(--muted);font-size:13px">说明：本站为 aihot.news 开源思路的加密行业复刻，品牌与代码均为独立实现；摘要为 AI 生成、链接原文，仅供信息参考。</p>
+</div></div>
+<footer class="site"><div class="wrap">
+CoinHOT · 加密货币行业动态聚合 · 每日精选与加密日报<br/>内容由 AI 自动采集、评分与撰写摘要，每条均链接原文；仅供信息参考，不构成投资建议。<br/>
+<a href="/coin-hot/about.html">算法说明</a> · <a href="/coin-hot/feed.xml">RSS</a>
+</div></footer></body></html>
