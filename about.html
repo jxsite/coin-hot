@@ -47,6 +47,7 @@ footer.site a{color:var(--muted)}
 .about ol,.about ul{padding-left:22px}
 code{background:var(--reason);padding:1px 6px;border-radius:6px;font-size:13px}
 table{border-collapse:collapse;font-size:14px;margin:10px 0}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
 td,th{border:1px solid var(--line);padding:6px 12px;text-align:left}
 </style><script>try{var m=localStorage.getItem('coinhot-theme')||'auto';var d=m==='dark'||(m==='auto'&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.setAttribute('data-theme',d?'dark':'light');}catch(e){}</script></head><body>
 <header class="site"><div class="wrap">
@@ -58,10 +59,10 @@ td,th{border:1px solid var(--line);padding:6px 12px;text-align:left}
 <p>CoinHOT 模仿 <b>aihot.news</b> 的产品形态（AI 聚合 → 两轮评分 → 中文摘要 → 每日日报），把它的行业从 AI 换成加密货币。整条流水线每天自动运行一次，流程如下：</p>
 <h2>1. 采集（多信源、分级）</h2>
 <p>从 8 家加密媒体的 RSS 抓取近 30 小时新闻，信源按权威度分三级：</p>
-<table><tr><th>分级</th><th>信源</th><th>入选门槛</th></tr>
+<div class="tablewrap"><table><tr><th>分级</th><th>信源</th><th>入选门槛</th></tr>
 <tr><td>T1</td><td>CoinDesk、CoinTelegraph、The Block</td><td>平均分 ≥ 60</td></tr>
 <tr><td>T1_5</td><td>Decrypt</td><td>平均分 ≥ 65</td></tr>
-<tr><td>T2</td><td>CryptoSlate、BeInCrypto、Bitcoin.com News、U.Today</td><td>平均分 ≥ 76</td></tr></table>
+<tr><td>T2</td><td>CryptoSlate、BeInCrypto、Bitcoin.com News、U.Today</td><td>平均分 ≥ 76</td></tr></table></div>
 <p>抓取后按链接与标题去重，同一事件的多家报道只保留一条主记录，其余计为“独立报道家数”。</p>
 <h2>2. 预筛</h2>
 <p>只保留加密行业相关内容，剔除纯广告/赞助稿、行情标题党、无信息增量的价格预测文和站内日报合集。</p>
