@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jxsite.github.io/coin-hot/sitemap.xml
